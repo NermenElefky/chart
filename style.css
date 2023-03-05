@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'DM Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(27, 66%, 92%);
+    height: 100vh;
+}
+@media (max-width:400px) {
+    body{
+        padding: 10px;
+    }
+}
+main{
+    width: 400px;
+    max-width: 100%;
+}
+.balance{
+    background-color: hsl(10, 79%, 65%);
+    width: 100%;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.balance .total{
+
+} 
+.balance h1 {
+    color: #fff;
+    font-size: 26px;
+    font-weight: 400;
+}
+.balance p {
+    color: #fff;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-bottom: 7px;
+}
+.balance img {
+    width: 58px;
+}
+.spending {
+    background: #fff;
+    padding: 20px 20px 30px 20px;
+    border-radius: 13px;
+    margin-top: 20px;
+}
+.spending >p{
+    color: #000;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 44px;
+}
+.days{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 2px solid hsl(27, 66%, 92%);
+    padding-bottom: 23px;
+}
+.days > div {
+    position: relative;
+}
+.days > div  div{
+    width: 38px;
+    height: 40px;
+    background: hsl(10, 79%, 65%);
+    border-radius: 5px;
+}
+.days > div p:first-of-type {
+    background: #000;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    padding: 9px 6px;
+    border-radius: 5px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    position: absolute;
+    top: -35px;
+    left: -6px;
+    transition: .3s;
+    opacity: 0;
+}
+@media (max-width:460px) {
+    .days > div p:first-of-type{
+        left: -5px;
+        padding: 9px 5px;
+    }
+}
+.days > div:has(div:hover) > p:first-of-type{
+    opacity: 1;
+}
+.days > div p:last-of-type{
+    font-size: 12px;
+    letter-spacing: .5px;
+    text-align: center;
+    margin-top: 5px;
+    color:   hsl(28, 10%, 53%);
+}
+.days > div .tue2{
+    height: 70px;
+}
+.days > div .wed2{
+    height: 100px;
+}
+.days > div .thu2{
+    height: 63px;
+}
+.days > div .fri2{
+    height: 50px;
+}
+.days > div .sat2{
+    height:86px; 
+}
+.days > div .sun2{
+    height:43px;
+}
+.days > div .active {
+    background-color: hsl(186, 34%, 60%);
+}
+.days > div div:hover {
+    cursor: pointer;
+    opacity: .7;
+}
+.price {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+}
+.price h2 {
+    font-size: 37px;
+}
+.price h4 {
+    font-size: 17px;
+}
+.price p {
+    font-size: 14px;
+    margin: 5px 0px;
+    color: hsl(28, 10%, 53%);
+}
